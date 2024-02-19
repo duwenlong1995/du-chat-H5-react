@@ -1,0 +1,111 @@
+.frame-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /**
+    *顶部样式
+    **/
+    .layout-navBar {
+        height: 90px;
+        .layout-navBar-div {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            width: 100%;
+            height: 90px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            box-shadow: 0 0 0.5px #333;
+            border-bottom: solid 1px var(--adm-color-border);
+            .adm-nav-bar-left {
+                color: #2675ec;
+            }
+            // 只隐藏主页返回键
+            .indexNav {
+                .adm-nav-bar-left {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+
+    // 内容样式
+    &-content {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        background-color: #FFFFFF;
+        // margin-top: 90px;
+        // &::-webkit-scrollbar {
+        //     display: none;
+        // }
+    }
+    /**
+    * 底部样式
+    **/
+    .layout-tabBar {
+        height: 100px;
+        .layout-tabBar-div {
+            box-sizing: content-box;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            box-shadow: 0 0 0.5px #333;
+            width: 100vw;
+            font-size: 26px;
+            border-top: solid 1px var(--adm-color-border);
+            padding-bottom: constant(safe-area-inset-bottom);
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+    }
+    &.h-tabBar {
+        .frame-view-content {
+            height: calc(100% - 100px);
+        }
+    }
+    /**
+*对话页面底部输入框样式
+**/
+    .bottomInput {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 160px;
+        width: 100%;
+        background-color: #FFFFFF;
+        .container {
+            width: 90%;
+            height: 90px;
+            border-radius: 50px;
+            background-color: #fafafa;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .input {
+                display: flex;
+                align-items: center;
+                width: 70%;
+            }
+            .rightButton {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                img {
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}

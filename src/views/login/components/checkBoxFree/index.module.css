@@ -1,0 +1,15 @@
+.toggleBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: block;
+}
+
+.toggleBtn .checkBoxFree:checked {
+  border-color: #2e6ddf;
+  background-color: #2e6ddf;
+}
+
+.toggleBtn span {
+  margin-left: 10px;
+}

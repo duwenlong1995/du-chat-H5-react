@@ -1,0 +1,39 @@
+.toggleBtn span {
+  display: block;
+  width: 48px;
+  height: 24px;
+  background: #d6d6d6;
+  border-radius: 24px;
+  position: relative;
+}
+
+.toggleBtn span::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -2px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+}
+
+.toggleBtn .inputFree {
+  opacity: 0;
+}
+
+.toggleBtn .inputFree:checked ~ span {
+  background: #4CD865;
+}
+
+.toggleBtn .inputFree:checked ~ span::after {
+  left: 24px;
+}
+
+.toggleBtn span, .toggleBtn span::after {
+  transition: 0.3s ease-in-out;
+}
+
+.toggleBtn span {
+  box-sizing: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}

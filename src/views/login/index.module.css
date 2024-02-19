@@ -1,0 +1,17 @@
+.index :global .frame-view-content .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.index :global .frame-view-content .container img {
+  height: 140px;
+  width: 140px;
+  border-radius: 30px;
+}
+
+.index :global .frame-view-content .container .adm-form {
+  margin-top: 60px;
+}

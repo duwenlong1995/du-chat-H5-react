@@ -1,0 +1,48 @@
+.input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 35px;
+    border-radius: 0.25rem;
+    position: relative;
+    top:30px;
+}
+// 移动端输入框
+.inputMobile {
+    height: 100px;
+    border: 0;
+    &:focus {
+        outline: none;
+        border-color: #2e6ddf;
+        background: transparent;
+    }
+}
+.filter {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+// 网页端输入框
+.inputWeb {
+    height: 80px;
+    border: 3px solid rgb(76, 131, 235);
+    caret-color: #2e6ddf;
+    //caret-color: transparent; /* 隐藏默认光标颜色 */
+    //cursor: url('custom-cursor.png'), auto; /* 使用自定义光标图片 */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    &:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #2e6ddf;
+        outline: 0;
+        box-shadow: 0 0 0 5px rgba(76, 131, 275, 0.5);
+    }
+    &:active {
+        border: 3px solid #2e6ddf;
+    }
+    &::placeholder {
+        color: #2e6ddf;
+        opacity: 0.6;
+    }
+}

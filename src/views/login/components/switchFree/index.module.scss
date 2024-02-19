@@ -1,0 +1,38 @@
+.toggleBtn span {
+    display: block;
+    width: 96px;
+    height: 48px;
+    background: #d6d6d6;
+    border-radius: 24px;
+    position: relative;
+}
+.toggleBtn span::after{
+    content: '';
+    position: absolute;
+    top:0px;
+    left:-4px;
+    width: 48px;
+    height: 48px;
+    background: white;
+    border-radius: 50%;
+}
+.toggleBtn .inputFree{
+    opacity: 0;
+}
+// input被点击后，选择他下面的span
+.toggleBtn .inputFree:checked~span{
+background: #4CD865;
+}
+ .toggleBtn .inputFree:checked~span::after{
+     left: 48px;
+ }
+ .toggleBtn span,.toggleBtn span::after{
+    transition: 0.3s ease-in-out;
+ }
+//  加阴影美化
+.toggleBtn span {
+    box-sizing: 0px 2px 4px rgba(0 0 0 / 0.4) inset,0px -2px 1px rgba(255 255 255 / 0.2)inset;
+}
+.toggleBtn span::after {
+    box-sizing: 2px 1px 2px rgba(0 0 0 / 0.2);
+}

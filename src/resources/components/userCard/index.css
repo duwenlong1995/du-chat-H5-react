@@ -1,0 +1,32 @@
+.userCard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.userCard .image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 60px;
+}
+
+.userCard .detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 35px;
+}
+
+.userCard .detail div:nth-child(1) {
+  margin-bottom: 6px;
+  font-size: 40px;
+  color: #131313;
+  font-family: Gilroy-Bold;
+}
+
+.userCard .detail div:nth-child(2) {
+  margin-top: 6px;
+  font-size: 32px;
+  color: #848484;
+  font-family: Gilroy-regular;
+}

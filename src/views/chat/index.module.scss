@@ -1,0 +1,93 @@
+.index {
+    :global {
+        .frame-view-content {
+            background-color: #E5E5E5;
+            padding: 20px;
+            font-size: 36px;
+        }
+    }
+}
+/* 入场动画过程 */
+.fade-enter {
+    transform: translateX(200px);
+}
+
+.fade-enter-active {
+    transition: 2s;
+    transform: translateX(0px);
+}
+.fade-enter-done {
+    transform: translateX(0px);
+}
+/* 出场动画过程 */
+.fade-exit {
+    transform: translateX(0px);
+}
+.fade-exit-active {
+    transition: 2s;
+    transform: translateX(200px);
+}
+.fade-exit-done {
+    transform: translateX(200px);
+}
+
+
+.chatMessages {
+    .message {
+        display: flex;
+    }
+    // 发送消息样式
+    .sended {
+        margin-top: 40px;
+      justify-content: flex-end;
+      .content {
+        font-family: Gilroy-regular;
+        color:#131313;
+        max-width: 70%;
+        padding:25px;
+        background-color: #F6F6F6;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 10px;
+      }
+      .image{
+           max-width: 70%;
+        max-height: 400px;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        overflow: hidden;
+
+      }
+      .video{}
+
+    }
+    // 接收消息样式
+    .recieved {
+        margin-top: 40px;
+      justify-content: flex-start;
+      .content {
+        font-family: Gilroy-Thin;
+        color:#FFFFFF;
+        max-width: 70%;
+        padding:25px;
+        background-color: #2675EC;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+      }
+      .image{
+        max-width: 70%;
+        max-height: 400px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+        overflow: hidden;
+      }
+      .video{}
+    }
+  }

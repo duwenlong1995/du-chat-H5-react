@@ -1,0 +1,51 @@
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  font-size: 35px;
+  border-radius: 0.25rem;
+  position: relative;
+  top: 30px;
+}
+
+.inputMobile {
+  height: 100px;
+  border: 0;
+}
+
+.inputMobile:focus {
+  outline: none;
+  border-color: #2e6ddf;
+  background: transparent;
+}
+
+.filter {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.inputWeb {
+  height: 80px;
+  border: 3px solid #4c83eb;
+  caret-color: #2e6ddf;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.inputWeb:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #2e6ddf;
+  outline: 0;
+  box-shadow: 0 0 0 5px rgba(76, 131, 255, 0.5);
+}
+
+.inputWeb:active {
+  border: 3px solid #2e6ddf;
+}
+
+.inputWeb::placeholder {
+  color: #2e6ddf;
+  opacity: 0.6;
+}
